@@ -7,7 +7,6 @@
 html,
 body {
     height: 100%;
-    margin: 0;
     padding: 0;
     width: 100%;
 }
@@ -15,55 +14,10 @@ body {
 body {
     font-size: $base-font-size;
     line-height: $base-line-height;
-
-    // To prevent the iPhone and iPad from inflating fonts
-    @include respond-to(1024, max) {
-        -webkit-text-size-adjust: 100%; // sass-lint:disable-line no-vendor-prefixes
-    }
-}
-
-[disabled] {
-    cursor: not-allowed;
-}
-
-ul {
-
-}
-
-ol {
-
-}
-
-figure {
-
-}
-
-strong {
-
-}
-
-em {
-
+    display: flex;
+    background-color: $site-background;
 }
 
 p {
-
-}
-
-hr {
-
-}
-
-img {
-    max-width: 100%;
-}
-
-a {
-
-}
-
-table {
-    //border-collapse: collapse;
-    //table-layout: fixed;
-    width: 100%;
+  margin: 0;
 }

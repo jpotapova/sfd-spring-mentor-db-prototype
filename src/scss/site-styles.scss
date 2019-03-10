@@ -26,7 +26,5 @@
 // Components
 @import 'components/helpers',
 '../components/header/header',
-'../components/footer/footer';
-
-// Print stylesheet
-@import 'print';
+'../components/main/main',
+'../components/sidebar/sidebar';

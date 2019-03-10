@@ -1,10 +1,18 @@
 // For naming colors variables, we recommend use http://chir.ag/projects/name-that-color/
 
-//MAIN COLOR PALETTE
-$black: #000;
-$white: #fff;
+// MAIN COLOR PALETTE
+$selago: #f3f7fd;
+$white: #ffffff;
+$regent-gray: #8995a4;
+$mystic: #e1e6ee;
+$amaranth: #ee3957;
 
-//COMMON COLORS
+// COMMON COLORS
+$site-background: $selago;
+$contrast-background: $white;
+$secondary: $regent-gray;
+$border: $mystic;
+$devbridge: $amaranth;
 
 //LINK COLORS
 
