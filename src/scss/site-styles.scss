@@ -23,8 +23,13 @@
 // Local modules
 @import 'components/headings';
 
+// sitewide components
+@import 'components/progress-circle';
+
 // Components
 @import 'components/helpers',
 '../components/header/header',
 '../components/main/main',
-'../components/sidebar/sidebar';
+'../components/sidebar/sidebar',
+'../components/logo/logo',
+'../components/me/me';
