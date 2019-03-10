@@ -9,9 +9,11 @@ $sidebar-width: 220px;
   color: $secondary;
   flex-direction: column;
   justify-content: space-between;
+  border-right: 1px solid $border;
+  flex-shrink: 0;
 
   &__info {
-    padding: $padding;
+    padding: $padding $padding 0 $padding;
   }
 
   &__copyright {
