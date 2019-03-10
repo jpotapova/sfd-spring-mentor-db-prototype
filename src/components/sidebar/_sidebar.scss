@@ -5,16 +5,37 @@ $sidebar-width: 220px;
   background: $contrast-background;
   display: flex;
   height: 100%;
-  padding: $padding;
   width: $sidebar-width;
   color: $secondary;
   flex-direction: column;
   justify-content: space-between;
 
+  &__info {
+    padding: $padding;
+  }
+
   &__copyright {
     font-size: $text-tiny;
     text-align: center;
     width: 100%;
+    padding: $padding;
   }
 
+  &__nav {
+
+    @include reset-list-style;
+
+    &-link {
+      text-decoration: none;
+      color: $secondary;
+      padding: 17px 0;
+      display: block;
+
+      &_active {
+        background: $site-background;
+        color: $active;
+      }
+
+    }
+  }
 }

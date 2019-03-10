@@ -11,6 +11,13 @@ body {
     width: 100%;
 }
 
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 body {
     font-size: $base-font-size;
     line-height: $base-line-height;
