@@ -3,13 +3,23 @@ $me-padding: 50px;
 .me {
   padding: $me-padding 0;
   align-items: center;
-  @include flex-center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__circle {
+    position: relative;
+    width: $progress-circle-size;
+    height: $progress-circle-size;
+  }
 
   &__photo {
     border-radius: 50%;
     width: $me-photo-size;
     height: $me-photo-size;
     position: absolute;
+    top: $me-circle-thickness;
+    left: $me-circle-thickness;
   }
 
 }
