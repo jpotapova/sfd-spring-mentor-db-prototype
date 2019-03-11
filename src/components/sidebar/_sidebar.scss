@@ -23,23 +23,4 @@ $sidebar-width: 220px;
         width: 100%;
     }
 
-    &__nav {
-
-        @include reset-list-style;
-
-        &-link {
-            color: $secondary-text;
-            display: block;
-            padding: 17px 0;
-            text-decoration: none;
-
-            &_active {
-                background: $site-background;
-                color: $active;
-            }
-
-        }
-
-    }
-
 }
