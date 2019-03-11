@@ -1,7 +1,13 @@
 .badge {
+    align-items: center;
     background-color: $white-ice;
     border-radius: 10px;
     color: $persian-green;
+    display: flex;
     font-size: 11px;
     padding: 3px 13px;
+
+    &__icon {
+      margin-right: 5px;
+    }
 }
