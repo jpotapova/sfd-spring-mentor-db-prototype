@@ -11,4 +11,9 @@ $icon-size-tiny: 12px;
       height: $icon-size-tiny;
       width: $icon-size-tiny;
     }
+
+    &--large {
+      height: $logo-size;
+      width: $logo-size;
+    }
 }
