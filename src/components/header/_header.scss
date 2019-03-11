@@ -1,17 +1,21 @@
 .header {
+    align-items: center;
     border-bottom: 1px solid $border;
     display: flex;
     height: $logo-size + $padding + 1;
     justify-content: space-between;
+    padding-bottom: $padding;
     width: 100%;
 
     &__nav {
-      align-items: flex-start;
       display: flex;
       flex-shrink: 0;
+      height: $logo-size;
     }
 
     &__notification-nav {
+      align-items: center;
+      display: flex;
       margin-right: $padding * 2;
     }
 
