@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%include src="../components/head.html" %>
+  <body>
+    <div class="sidebar">
+      <div class="sidebar__info">
+        <%include src="../components/logo.html" %>
+        <div class="me">
+          <%include src="../components/me.html" %>
+          <div class="badge badge--admin"><div class="icon icon--tiny badge__icon"></div>Administrator</div>
+        </div>
+      </div>
+      <%include src="../components/nav/nav-admin.html" %>
+      <%include src="../components/copyright.html" %>
+    </div>
+    <div class="container">
+      <%include src="../components/header.html" %>
+      <main class="main">
+        <h1 class="heading1">My profile</h1>
+        <%include src="../components/profile-tabs/profile-tabs-skills.html" %>
+        <div class="section profile">
+          <div class="profile__section">
+            <%include src="../components/edit.html" %>
+            <h2 class="heading2">I'm a specialist at</h2>
+            <ul class="skills">
+              <li class="skills__row">
+                <div class="skill">
+                  React.js
+                  <div class="skill__stars">
+                    <div class="icon skill__star"></div>
+                    <div class="icon skill__star"></div>
+                    <div class="icon skill__star"></div>
+                  </div>
+                </div>
+              </li>
+              <li class="skills__row">
+                <div class="skill">
+                  Java J2EE
+                  <div class="skill__stars">
+                    <div class="icon skill__star"></div>
+                  </div>
+                </div>
+              </li>
+              <li class="skills__row">
+                <div class="skill">
+                  JavaScript
+                  <div class="skill__stars">
+                    <div class="icon skill__star"></div>
+                    <div class="icon skill__star"></div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="profile__section profile__section--last">
+            <%include src="../components/edit.html" %>
+            <h2 class="heading2">I want to learn</h2>
+            <div class="goal">
+              <h3 class="heading3">React Native</h3>
+              <p>I’m really interesten in mobile app development. Would like to get familiar with using React Native for iOS app development.</p>
+            </div>
+          </div>
+        </div>
+
+      </main>
+    </div>
+  </body>
+</html>
