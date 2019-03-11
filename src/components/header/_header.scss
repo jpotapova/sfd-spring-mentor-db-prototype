@@ -8,6 +8,7 @@
     &__nav {
       align-items: flex-start;
       display: flex;
+      flex-shrink: 0;
     }
 
     &__notification-nav {
