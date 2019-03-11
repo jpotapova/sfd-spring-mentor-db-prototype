@@ -1,5 +1,4 @@
-$progress-circle-thickness: 3px;
-$progress-circle-size: 78px;
+
 
 .progress-circle {
     background-color: $border;
@@ -33,14 +32,14 @@ $progress-circle-size: 78px;
 
     &--full {
 
-      height: $progress-circle-size - 4;
-      width: $progress-circle-size - 4;
+      height: $progress-circle-size-small;
+      width: $progress-circle-size-small;
 
       &:before {
-          bottom: 2px;
-          left: 2px;
-          right: 2px;
-          top: 2px;
+          bottom: $progress-circle-thickness-small;
+          left: $progress-circle-thickness-small;
+          right: $progress-circle-thickness-small;
+          top: $progress-circle-thickness-small;
       }
 
       &:after {

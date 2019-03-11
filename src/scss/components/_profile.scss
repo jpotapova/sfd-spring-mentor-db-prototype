@@ -4,6 +4,8 @@
   &__photos {
     position: relative;
     padding-bottom: 30px;
+    display: flex;
+    align-items: center;
   }
 
   &__photo {
@@ -11,4 +13,16 @@
     position: absolute;
     top: 5px;
   }
+
+  &__add-photo {
+      background: $secondary-background;
+      border-radius: 50%;
+      width: $photo-circle-size;
+      height: $photo-circle-size;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-left: $padding;
+  }
+
 }

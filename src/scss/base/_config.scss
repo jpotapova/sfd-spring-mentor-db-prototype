@@ -16,3 +16,10 @@ $table-cell-width-short: 50 - $table-cell-width;
 $thick: 3px;
 
 $logo-size: 30px;
+
+
+$progress-circle-thickness: 3px;
+$progress-circle-size: 78px;
+$progress-circle-thickness-small: $progress-circle-thickness - 1;
+$progress-circle-size-small: $progress-circle-size - 2 * $progress-circle-thickness-small;
+$photo-circle-size: 64px; //fixme
