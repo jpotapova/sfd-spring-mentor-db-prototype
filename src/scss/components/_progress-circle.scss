@@ -30,4 +30,21 @@ $progress-circle-size: 78px;
         height: 100%;
         width: 100%;
     }
+
+    &--full {
+
+      height: $progress-circle-size - 4;
+      width: $progress-circle-size - 4;
+
+      &:before {
+          bottom: 2px;
+          left: 2px;
+          right: 2px;
+          top: 2px;
+      }
+
+      &:after {
+        background-image: linear-gradient(0deg, $active 50%, transparent 50%, transparent);
+      }
+    }
 }

@@ -1,0 +1,14 @@
+.profile {
+
+
+  &__photos {
+    position: relative;
+    padding-bottom: 30px;
+  }
+
+  &__photo {
+    left: 5px;
+    position: absolute;
+    top: 5px;
+  }
+}
