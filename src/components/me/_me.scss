@@ -12,13 +12,4 @@ $me-padding: 50px;
         width: $progress-circle-size;
     }
 
-    &__photo {
-        border-radius: 50%;
-        left: $me-circle-thickness;
-        height: $me-photo-size;
-        position: absolute;
-        top: $me-circle-thickness;
-        width: $me-photo-size;
-    }
-
 }

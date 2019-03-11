@@ -9,15 +9,37 @@
     &__header-cell {
         border-bottom: 1px solid $border;
         font-weight: normal;
-        padding: 16px 20px;
+        padding: 16px $table-cell-spacing / 2;
+
+        &_first {
+          padding-left: $table-cell-spacing;
+        }
+
+        &_last {
+          padding-left: $table-cell-spacing;
+        }
+
     }
 
     &__cell {
-        padding: 12px 20px;
+        padding: 12px $table-cell-spacing / 2;
+        vertical-align: middle;
+
+        &_first {
+          padding-left: $table-cell-spacing;
+        }
+
+        &_last {
+          padding-left: $table-cell-spacing;
+        }
+
+        &_photo {
+          width: $photo-size;
+        }
     }
 
     &__row {
-        :nth-child(even) {
+        &:nth-child(even) {
             background-color: $secondary-background;
         }
     }
