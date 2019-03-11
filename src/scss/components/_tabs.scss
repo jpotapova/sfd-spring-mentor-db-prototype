@@ -1,23 +1,25 @@
 .tabs {
 
-   @include reset-list-style;
-   display: flex;
-   background: $contrast-background;
-   border-bottom: 1px solid $border;
-   border-top-left-radius: 4px;
-   border-top-right-radius: 4px;
+    @include reset-list-style;
+    background: $contrast-background;
+    border-bottom: 1px solid $border;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    display: flex;
 
-   &__link {
-      text-decoration: none;
-      color: $secondary-text;
-      padding: 16px 30px;
-      display: block;
-      border-bottom: 2px solid transparent;
+    &__link {
 
-      &--active {
-          color: $active;
-          border-color: $active;
-      }
-   }
+        border-bottom: 2px solid transparent;
+        color: $secondary-text;
+        display: block;
+        padding: 16px 30px;
+        text-decoration: none;
+
+        &--active {
+            border-color: $active;
+            color: $active;    
+        }
+
+    }
 
 }

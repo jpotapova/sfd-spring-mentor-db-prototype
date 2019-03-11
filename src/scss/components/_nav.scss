@@ -10,14 +10,14 @@
         padding: 17px 0;
         text-decoration: none;
 
-        &_active {
+        &--active {
             background: $site-background;
             border-color: $active;
             color: $active;
         }
 
         &__icon {
-          margin: 0 $padding 0 25px;
+            margin: 0 $padding 0 25px;
         }
 
     }
