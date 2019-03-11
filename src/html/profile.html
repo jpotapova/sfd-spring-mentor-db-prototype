@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%include src="../components/head.html" %>
+  <body>
+    <div class="sidebar">
+      <div class="sidebar__info">
+        <%include src="../components/logo.html" %>
+        <div class="me">
+          <%include src="../components/me.html" %>
+          <div class="badge badge--admin"><div class="icon icon--tiny badge__icon"></div>Administrator</div>
+        </div>
+      </div>
+      <%include src="../components/nav/nav-admin.html" %>
+      <%include src="../components/copyright.html" %>
+    </div>
+    <div class="container">
+      <%include src="../components/header.html" %>
+      <main class="main">
+        <h1 class="heading1">My profile</h1>
+        <%include src="../components/profile-tabs.html" %>
+        <div class="section">
+          <img src="https://via.placeholder.com/64x64" class="photo" />
+          <a href="" class="edit"><div class="icon"></div></a>
+          <form class="form">
+            <div class="form__row">
+              <div class="form__field">
+                <label for="name" class="form__label">Name</label>
+                <input class="form__input form__input--disabled" type="text" id="name" value="Carolyn" disabled />
+              </div>
+              <div class="form__field">
+                <label for="surname" class="form__label">Surname</label>
+                <input class="form__input form__input--disabled" type="text" id="surname" value="Simpson" disabled />
+              </div>
+            </div>
+            <div class="form__row">
+              <div class="form__field form__field--wide">
+                <label for="email" class="form__label">Email address</label>
+                <input type="text" id="email" class="form__input form__input--disabled" value="carolyn.simpson@gmail.com" disabled />
+              </div>
+            </div>
+            <div class="form__row">
+              <div class="form__field">
+                <label for="city" class="form__label">City</label>
+                <select id="city" class="form__input form__input--disabled" disabled >
+                  <option>Vilnius</option>
+                  <option>Kaunas</option>
+                </select>
+              </div>
+            </div>
+            <div class="form__row">
+              <div class="form__field">
+                <label for="sld" class="form__label">Next SLD</label>
+                <input type="text" id="sld" class="form__input form__input--disabled" value="2019.03.21" disabled />
+              </div>
+            </div>
+          </form>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

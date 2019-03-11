@@ -1,0 +1,39 @@
+.form {
+
+    width: 630px;
+
+    &__row {
+      padding-bottom: $padding;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__field {
+      display: flex;
+      flex-direction: column;
+      width: 300px;
+
+      &--wide {
+        width: 100%;
+      }
+    }
+
+    &__input {
+      color: $main;
+      font-size: 15px;
+      padding: $padding;
+      border: 1px solid $border;
+      border-radius: 4px;
+
+      &--disabled {
+        background: $secondary-background;
+        color: $secondary-text;
+      }
+
+    }
+
+    &__label {
+      color: $secondary-text;
+      padding-bottom: 5px;
+    }
+}
