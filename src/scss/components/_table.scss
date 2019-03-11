@@ -6,6 +6,20 @@
     text-align: left;
     width: 100%;
 
+    &__header-content {
+        display: flex;
+        align-items: center;
+    }
+
+    &__header-actions {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__header-action {
+        margin-left: $table-cell-spacing;
+    }
+
     &__header-cell {
         border-bottom: 1px solid $border;
         font-weight: normal;
