@@ -1,25 +1,24 @@
 $me-padding: 50px;
 
 .me {
-  padding: $me-padding 0;
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: $me-padding 0;
 
-  &__circle {
-    position: relative;
-    width: $progress-circle-size;
-    height: $progress-circle-size;
-  }
+    &__circle {
+        height: $progress-circle-size;
+        position: relative;
+        width: $progress-circle-size;
+    }
 
-  &__photo {
-    border-radius: 50%;
-    width: $me-photo-size;
-    height: $me-photo-size;
-    position: absolute;
-    top: $me-circle-thickness;
-    left: $me-circle-thickness;
-  }
+    &__photo {
+        border-radius: 50%;
+        left: $me-circle-thickness;
+        height: $me-photo-size;
+        position: absolute;
+        top: $me-circle-thickness;
+        width: $me-photo-size;
+    }
 
 }

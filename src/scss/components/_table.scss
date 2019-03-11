@@ -1,22 +1,25 @@
 .table {
-  background-color: $contrast-background;
-  width: 100%;
-  color: $main;
-  text-align: left;
-  border-collapse: collapse;
 
-  &__header-cell {
-    padding: 16px 20px;
-    font-weight: normal;
-    border-bottom: 1px solid $border;
-  }
+    background-color: $contrast-background;
+    border-collapse: collapse;
+    color: $main;
+    text-align: left;
+    width: 100%;
 
-  &__cell {
-    padding: 12px 20px;
-  }
+    &__header-cell {
+        border-bottom: 1px solid $border;
+        font-weight: normal;
+        padding: 16px 20px;
+    }
 
-  &__row:nth-child(even){
-    background-color: $secondary-background;
-  }
+    &__cell {
+        padding: 12px 20px;
+    }
+
+    &__row {
+        :nth-child(even) {
+            background-color: $secondary-background;
+        }
+    }
 
 }

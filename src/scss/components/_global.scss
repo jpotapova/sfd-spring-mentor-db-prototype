@@ -1,8 +1,11 @@
 html {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
-*, *:before, *:after {
-  box-sizing: inherit;
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
 }
 
 html,
@@ -13,12 +16,12 @@ body {
 }
 
 body {
+    background-color: $site-background;
+    display: flex;
     font-size: $base-font-size;
     line-height: $base-line-height;
-    display: flex;
-    background-color: $site-background;
 }
 
 p {
-  margin: 0;
+    margin: 0;
 }

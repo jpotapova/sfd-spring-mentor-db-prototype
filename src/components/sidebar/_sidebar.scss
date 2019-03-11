@@ -2,42 +2,44 @@ $sidebar-width: 220px;
 
 .sidebar {
 
-  background: $contrast-background;
-  display: flex;
-  height: 100%;
-  width: $sidebar-width;
-  color: $secondary-text;
-  flex-direction: column;
-  justify-content: space-between;
-  border-right: 1px solid $border;
-  flex-shrink: 0;
+    background: $contrast-background;
+    border-right: 1px solid $border;
+    color: $secondary-text;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    height: 100%;
+    justify-content: space-between;
+    width: $sidebar-width;
 
-  &__info {
-    padding: $padding $padding 0 $padding;
-  }
+    &__info {
+        padding: $padding $padding 0 $padding;
+    }
 
-  &__copyright {
-    font-size: $text-tiny;
-    text-align: center;
-    width: 100%;
-    padding: $padding;
-  }
+    &__copyright {
+        font-size: $text-tiny;
+        padding: $padding;
+        text-align: center;
+        width: 100%;
+    }
 
-  &__nav {
+    &__nav {
 
-    @include reset-list-style;
+        @include reset-list-style;
 
-    &-link {
-      text-decoration: none;
-      color: $secondary-text;
-      padding: 17px 0;
-      display: block;
+        &-link {
+            color: $secondary-text;
+            display: block;
+            padding: 17px 0;
+            text-decoration: none;
 
-      &_active {
-        background: $site-background;
-        color: $active;
-      }
+            &_active {
+                background: $site-background;
+                color: $active;
+            }
+
+        }
 
     }
-  }
+
 }

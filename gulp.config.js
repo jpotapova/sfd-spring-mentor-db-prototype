@@ -87,30 +87,6 @@ module.exports = function () {
                     interlaced: true
                 }
             }
-        },
-        svgConfig: {
-            shape: {
-                spacing: {
-                    padding: 4
-                }
-            },
-            variables: {
-                version: Math.round(+new Date() / 1000)
-            },
-            mode: {
-                css: {
-                    bust: false,
-                    dest: "./",
-                    // layout: "vertical", "horizontal", "diagonal"
-                    sprite: svg.spriteFolder + "sprite.svg",
-                    render: {
-                        scss: {
-                            dest: svg.scssMapFolder + "_svg-sprite-map.scss",
-                            template: svg.scssTemplateFolder + "_svg-sprite-template.mustache"
-                        }
-                    }
-                }
-            }
         }
     };
 

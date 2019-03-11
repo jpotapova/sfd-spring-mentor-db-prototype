@@ -1,33 +1,31 @@
 .progress-circle {
-  background-color: $border;
-  border-radius: 50%;
-  display: inline-block;
-  height: $progress-circle-size;
-  position: relative;
-  width: $progress-circle-size;
-
-  &:before {
-    align-items: center;
-    background-color: $contrast-background;
+    background-color: $border;
     border-radius: 50%;
-    content: '';
-    @include flex-center;
-    position: absolute;
-    left: $progress-circle-thickness;
-    right: $progress-circle-thickness;
-    top: $progress-circle-thickness;
-    bottom: $progress-circle-thickness;
-  }
-
-  &:after {
-    background-color: $active;
-    border-radius: 50%;
-    content: '';
     display: inline-block;
-    height: 100%;
-    width: 100%;
-    background-image:
-      linear-gradient(0deg, $active 50%, transparent 50%, transparent),
-      linear-gradient(270deg, $active 50%, $border 50%, $border);
-  }
+    height: $progress-circle-size;
+    position: relative;
+    width: $progress-circle-size;
+
+    &:before {
+        @include flex-center;
+        align-items: center;
+        background-color: $contrast-background;
+        border-radius: 50%;
+        bottom: $progress-circle-thickness;
+        content: '';
+        left: $progress-circle-thickness;
+        position: absolute;
+        right: $progress-circle-thickness;
+        top: $progress-circle-thickness;
+    }
+
+    &:after {
+        background-color: $active;
+        background-image: linear-gradient(0deg, $active 50%, transparent 50%, transparent), linear-gradient(270deg, $active 50%, $border 50%, $border);
+        border-radius: 50%;
+        content: '';
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+    }
 }
