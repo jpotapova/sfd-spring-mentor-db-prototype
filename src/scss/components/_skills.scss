@@ -1,0 +1,9 @@
+.skills {
+  @include reset-list-style;
+  padding-top: $padding;
+  width: 400px;
+
+  &__row {
+    padding-bottom: 10px;
+  }
+}

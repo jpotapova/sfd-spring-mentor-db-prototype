@@ -1,0 +1,15 @@
+.skill {
+  background: $secondary-background;
+  padding: 10px 15px;
+  font-size: 13px;
+  display: flex;
+  justify-content: space-between;
+
+  &__stars {
+    display: flex;
+  }
+
+  &__star {
+    margin-left: 5px;
+  }
+}

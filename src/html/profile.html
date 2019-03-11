@@ -17,13 +17,12 @@
       <%include src="../components/header.html" %>
       <main class="main">
         <h1 class="heading1">My profile</h1>
-        <%include src="../components/profile-tabs.html" %>
+        <%include src="../components/profile-tabs/profile-tabs.html" %>
         <div class="section">
           <div class="profile__photos">
             <img src="https://via.placeholder.com/64x64" class="photo" />
           </div>
-
-          <a href="" class="edit"><div class="icon"></div></a>
+          <%include src="../components/edit.html" %>
           <form class="form">
             <div class="form__row">
               <div class="form__field">
