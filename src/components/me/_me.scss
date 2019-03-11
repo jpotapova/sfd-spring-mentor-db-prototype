@@ -5,11 +5,11 @@ $me-padding: 50px;
     display: flex;
     flex-direction: column;
     padding: $me-padding 0;
+    position: relative;
 
-    &__circle {
-        height: $progress-circle-size;
-        position: relative;
-        width: $progress-circle-size;
+    &__photo {
+      position: absolute;
+      top: 7px;
+      left: 7px;
     }
-
 }

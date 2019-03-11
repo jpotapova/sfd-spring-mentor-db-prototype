@@ -1,7 +1,9 @@
+$progress-circle-thickness: 3px;
+$progress-circle-size: 78px;
+
 .progress-circle {
     background-color: $border;
     border-radius: 50%;
-    display: inline-block;
     height: $progress-circle-size;
     position: relative;
     width: $progress-circle-size;

@@ -6,37 +6,41 @@
     text-align: left;
     width: 100%;
 
-    &__header-content {
-        display: flex;
-        align-items: center;
-    }
+    &__header {
 
-    &__header-actions {
-        display: flex;
-        flex-direction: column;
-    }
-
-    &__header-action {
-        margin-left: $table-cell-spacing;
-    }
-
-    &__header-cell {
-        border-bottom: 1px solid $border;
-        font-weight: normal;
-        padding: 16px $table-cell-spacing / 2;
-        width: $table-cell-width;
-
-        &_first {
-          padding-left: $table-cell-spacing;
+        &-content {
+            align-items: center;
+            display: flex;
         }
 
-        &_last {
-          padding-right: $table-cell-spacing;
+        &-actions {
+            display: flex;
+            flex-direction: column;
         }
 
-        &_short {
-          width: $table-cell-width-short;
+        &-action {
+            margin-left: $table-cell-spacing;
         }
+
+        &-cell {
+            border-bottom: 1px solid $border;
+            font-weight: normal;
+            padding: 16px $table-cell-spacing / 2;
+            width: $table-cell-width;
+
+            &--first {
+                padding-left: $table-cell-spacing;
+            }
+
+            &--last {
+                padding-right: $table-cell-spacing;
+            }
+
+            &--short {
+                width: $table-cell-width-short;
+            }
+        }
+
     }
 
     &__cell {
@@ -44,12 +48,12 @@
         padding: 12px $table-cell-spacing / 2;
         vertical-align: middle;
 
-        &_first {
-          padding-left: $table-cell-spacing;
+        &--first {
+            padding-left: $table-cell-spacing;
         }
 
-        &_last {
-          padding-right: $table-cell-spacing;
+        &--last {
+            padding-right: $table-cell-spacing;
         }
     }
 
@@ -60,22 +64,22 @@
     }
 
     &__content {
-      align-items: center;
-      display: flex;
+        align-items: center;
+        display: flex;
 
-      &_actions {
-        justify-content: space-between;
-      }
+        &--actions {
+            justify-content: space-between;
+        }
     }
 
     &__photo {
-      margin-right: $table-cell-spacing;
+        margin-right: $table-cell-spacing;
     }
 
     &__actions {
-      display: flex;
-      justify-content: space-between;
-      width: 2 * $icon-size + $table-cell-spacing;
+        display: flex;
+        justify-content: space-between;
+        width: 2 * $icon-size + $table-cell-spacing;
     }
 
 }
