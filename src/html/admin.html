@@ -17,7 +17,15 @@
       <%include src="../components/header/header.html" %>
       <main class="main">
         <h1 class="heading1">Administration</h1>
-        <%include src="../components/people/people.html" %>
+        <ul class="tabs">
+          <li><a href="" class="tabs__link">Reports</a></li>
+          <li><a href="" class="tabs__link tabs__link--active">Users</a></li>
+          <li><a href="" class="tabs__link">Initial admin</a></li>
+        </ul>
+        <table class="table">
+          <%include src="../components/people/head-small.html" %>
+          <%include src="../components/people/body.html" %>
+        </table>
       </main>
     </div>
   </body>

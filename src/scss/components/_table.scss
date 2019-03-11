@@ -39,6 +39,11 @@
             &--short {
                 width: $table-cell-width-short;
             }
+
+            &--small {
+                padding-bottom: 12px;
+                padding-top: 12px;
+            }
         }
 
     }
