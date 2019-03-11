@@ -1,11 +1,18 @@
 .form {
 
-    width: 630px;
+
 
     &__row {
       padding-bottom: $padding;
       display: flex;
       justify-content: space-between;
+      width: 690px;
+      padding-left: 30px;
+      padding-right: 30px;
+
+      &--last {
+        padding-bottom: 30px;
+      }
     }
 
     &__field {
@@ -36,5 +43,12 @@
     &__label {
       color: $secondary-text;
       padding-bottom: 5px;
+    }
+
+    &__actions {
+      border-top: 1px solid $border;
+      padding: $padding 30px;
+      display: flex;
+      justify-content: flex-end;
     }
 }

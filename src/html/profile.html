@@ -19,7 +19,10 @@
         <h1 class="heading1">My profile</h1>
         <%include src="../components/profile-tabs.html" %>
         <div class="section">
-          <img src="https://via.placeholder.com/64x64" class="photo" />
+          <div class="profile__photos">
+            <img src="https://via.placeholder.com/64x64" class="photo" />
+          </div>
+
           <a href="" class="edit"><div class="icon"></div></a>
           <form class="form">
             <div class="form__row">
@@ -47,7 +50,7 @@
                 </select>
               </div>
             </div>
-            <div class="form__row">
+            <div class="form__row form__row--last">
               <div class="form__field">
                 <label for="sld" class="form__label">Next SLD</label>
                 <input type="text" id="sld" class="form__input form__input--disabled" value="2019.03.21" disabled />
